@@ -1,0 +1,46 @@
+/*this is for the container around the buttons*/
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    background-color: black;
+    padding: 10px;
+  }
+
+  /*this is for the "buttons"*/
+  .grid-item {
+    color: white;
+    background-color: rgb(43, 32, 32);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+    
+  }
+/*this makes it so only the buttons will change when hovered over*/
+  .grid-container > div:hover {
+    background-color: white;
+    color: black;
+  }
+
+  /*this makes the equals button red*/
+  #equals{
+      background-color: red;
+  }
+
+  /*This will change the equals button when hovered over*/
+  #equals:hover{
+    background-color: white;
+    color: black;
+  }
+
+  /*this makes it so the blank spaces are black and won't be affected when hovered over*/
+  #blank{
+      background-color: black;
+  }
+
+/*this is the view window foer the calculator*/
+  .view{
+padding: 100px;
+background-color: white;
+border: 10px solid black;
+  }
