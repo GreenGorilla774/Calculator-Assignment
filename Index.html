@@ -6,41 +6,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculator</title>
     <link rel="stylesheet" href="style.css">
+    <script src="/MyJavaScript.js"></script>
 </head>
-<body>
+<body class="body">
+
+    <div id="calculator" role="application">
+
 <!--This is the div that is the view window for the calculator-->
-    <div class="view"></div>
+    <div class="view" aria-labelledby="displayScreen"></div>
     
     <!--this is the container and the buttons that it holds.-->
-    <div class="grid-container">
-        <div class="grid-item">^</div>
-        <div class="grid-item">(</div>
-        <div class="grid-item" >)</div>
-        <div class="grid-item">C</div>
-        <div class="grid-item">/</div>
+    <div class="grid-container" aria-labelledby="keys">
+        <button class="grid-item" id="buttons" tabindex="0">^</button>
+        <button class="grid-item" id="buttons" tabindex="0">(</button>
+        <button class="grid-item" id="buttons" tabindex="0">)</button>
+        <button class="grid-item" id="buttons" tabindex="0">C</button>
+        <button class="grid-item" id="buttons" tabindex="0">÷</button>
+        <button class="grid-item" id="buttons" tabindex="0">%</button>
+        <button class="grid-item" id="buttons" tabindex="0">7</button>
+        <button class="grid-item" id="buttons" tabindex="0">8</button>
+        <button class="grid-item" id="buttons" tabindex="0">9</button>
+        <button class="grid-item" id="buttons" tabindex="0">x</button>
         <div class="grid-item" id="blank"></div>
-        <div class="grid-item">7</div>
-        <div class="grid-item">8</div>
-        <div class="grid-item">9</div>
-        <div class="grid-item">*</div>
+        <button class="grid-item" id="buttons" tabindex="0">4</button>
+        <button class="grid-item" id="buttons" tabindex="0">5</button>
+        <button class="grid-item" id="buttons" tabindex="0">6</button>
+        <button class="grid-item" id="buttons" tabindex="0">-</button>
         <div class="grid-item" id="blank"></div>
-        <div class="grid-item">4</div>
-        <div class="grid-item">5</div>
-        <div class="grid-item">6</div>
-        <div class="grid-item">-</div>
+        <button class="grid-item" id="buttons" tabindex="0">1</button>
+        <button class="grid-item" id="buttons" tabindex="0">2</button>
+        <button class="grid-item" id="buttons" tabindex="0">3</button>
+        <button class="grid-item" id="buttons" tabindex="0">+</button>
         <div class="grid-item" id="blank"></div>
-        <div class="grid-item">1</div>
-        <div class="grid-item">2</div>
-        <div class="grid-item">3</div>
-        <div class="grid-item">+</div>
-        <div class="grid-item" id="blank"></div>
-        <div class="grid-item">+/-</div>
-        <div class="grid-item">0</div>
-        <div class="grid-item">.</div>
-        <div class="grid-item" id="equals">=</div>
+        <button class="grid-item" id="buttons" tabindex="0">+/-</button>
+        <button class="grid-item" id="buttons" tabindex="0">0</button>
+        <button class="grid-item" id="buttons"tabindex="0">.</button>
+        <button class="grid-item" id="equals" tabindex="0">=</button>
         
 
       </div>
 
+
+    </div>
 </body>
 </html>

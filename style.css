@@ -10,14 +10,15 @@
   .grid-item {
     color: white;
     background-color: rgb(43, 32, 32);
-    border: 1px solid rgba(0, 0, 0, 0.8);
-    padding: 20px;
+    border: 5px solid rgba(0, 0, 0, 0.8);
+    padding: 25px;
     font-size: 30px;
     text-align: center;
     
   }
+
 /*this makes it so only the buttons will change when hovered over*/
-  .grid-container > div:hover {
+  .grid-container > button:hover {
     background-color: white;
     color: black;
   }
@@ -43,4 +44,20 @@
 padding: 100px;
 background-color: white;
 border: 10px solid black;
+
+    height:90px;
+	width: auto;
+	padding: 0 10px; 
+	border-radius: 5px;
+  margin-bottom:10px;
+
+	font-size: 30px;
+	line-height: 90px;
+	color: black;
+	text-align: right;
+  overflow:auto;
+  }
+
+  .body{
+    background-color: black;
   }
