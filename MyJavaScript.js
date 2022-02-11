@@ -4,6 +4,16 @@ var operators = ['/', '*', '-', '+', '^', '+/-'];
 
 var decimal = false;
 
+
+
+// button = document.getElementById("buttons");
+
+// document.getElementById("button8").addEventListener("click", function(){
+//     alert("hello world");
+// })
+
+
+
 for(var i = 0; i < keys.length; i++){
     keys[i].onclick = function(e){
         var input = document.querySelector('.view');
@@ -144,13 +154,19 @@ document.onkeydown = function(event){
         document.querySelector('.view').innerHTML += '^';
     }
 
+    if((inputValue != '' && operators.indexOf(lastChar) == -1 && key_code == 190 ||  
+    operators.indexOf(lastChar) == -1 && key_code == 110)){
+        document.querySelector('.view').innerHTML += '.';
+    }
+
+
     if(key_code==13 || key_code==187 && event.shiftKey == false){
         input.innerHTML = eval(equation);
 
         decimal = false;
     }
 
-    if(key_code==8 || key_code==46){
+    if(key_code==8){
         input.innerHTML = '';
         decimal = false;
     }
@@ -159,3 +175,21 @@ document.onkeydown = function(event){
 
 }
 
+
+
+
+
+
+
+
+
+
+var btn = document.getElementById('buttons');
+
+if(btn){
+btn.addEventListener('click', function(event){
+    console.log('button clicked');
+    document.querySelector('.view').innerHTML += '^';
+})
+
+}
