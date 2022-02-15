@@ -154,10 +154,7 @@ document.onkeydown = function(event){
         document.querySelector('.view').innerHTML += '^';
     }
 
-    if((inputValue != '' && operators.indexOf(lastChar) == -1 && key_code == 190 ||  
-    operators.indexOf(lastChar) == -1 && key_code == 110)){
-        document.querySelector('.view').innerHTML += '.';
-    }
+            
 
 
     if(key_code==13 || key_code==187 && event.shiftKey == false){
@@ -184,12 +181,28 @@ document.onkeydown = function(event){
 
 
 
-var btn = document.getElementById('buttons');
+// var btn = document.getElementById('buttons');
 
-if(btn){
-btn.addEventListener('click', function(event){
-    console.log('button clicked');
-    document.querySelector('.view').innerHTML += '^';
-})
+// if(btn){
+// btn.addEventListener('click', function(event){
+//     console.log('button clicked');
+//     document.querySelector('.view').innerHTML += '^';
+// })
 
-}
+// }
+
+
+
+collection = document.getElementsByTagName('button');
+
+console.log(collection);
+
+// Array.from(collection).forEach(function (element) {
+//     console.log(element)
+//   });
+
+// for(elem in document.getElementsByTagName('button')){console.log(elem)}
+
+
+
+console.log(document.getElementsByTagName('button').item[0]);
