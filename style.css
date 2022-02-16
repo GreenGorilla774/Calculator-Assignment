@@ -61,3 +61,13 @@ border: 10px solid black;
   .body{
     background-color: black;
   }
+
+/*makes the out of order buttons greyed out*/
+  #OOO{
+    color: black;
+    background-color: rgb(82, 77, 77);
+    border: 5px solid rgba(0, 0, 0, 0.8);
+    padding: 25px;
+    font-size: 30px;
+    text-align: center;
+  }
